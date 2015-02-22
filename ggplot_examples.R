@@ -32,3 +32,5 @@ ggplot(df, aes(Species, value, fill = variable)) +
     scale_fill_brewer(palette = "Set1")
 
 # Done with lecture
+
+# I'm in the cloud
