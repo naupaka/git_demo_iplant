@@ -24,3 +24,10 @@ ggplot(d2, aes(carat, price, color=color)) + geom_point()
 
 library(MASS)
 ggplot(birthwt, aes(factor(race), bwt)) + geom_boxplot()
+
+library("reshape2")
+df  <- melt(iris, id.vars = "Species")
+ggplot(df, aes(Species, value, fill = variable)) +
+    geom_bar(stat = "identity", position = "dodge") +
+    scale_fill_brewer(palette = "Set1")
+￼
